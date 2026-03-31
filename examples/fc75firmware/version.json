@@ -1,0 +1,116 @@
+{
+  "devices": {
+    "primary": {
+      "version": "1.0.63",
+      "host": "fc75firmware.s3.ca-central-1.amazonaws.com",
+      "assethost": "https://fc75assets.s3.ca-central-1.amazonaws.com/",
+      "path": "/ESP32-PROD-1.0.63.bin",
+
+      "firmware": {
+        "url": "https://fc75firmware.s3.ca-central-1.amazonaws.com/ESP32-PROD-1.0.63.bin.enc",
+        "size": 1234567,
+        "sha256": "FIRMWARE_SHA256_HEX",
+
+        "enc": {
+          "alg": "AES-256-GCM",
+          "nonce_b64": "BASE64_NONCE",
+          "tag_b64": "BASE64_TAG"
+        },
+
+        "dek": {
+          "key_id": "esp32_key_v1",
+          "wrap_alg": "ECIES-P256+A256GCM",
+          "wrapped_dek_b64": "BASE64_WRAPPED_DEK",
+          "ephemeral_pub_b64": "BASE64_EPHEMERAL_PUB",
+          "wrap_nonce_b64": "BASE64_WRAP_NONCE"
+        }
+      },
+
+      "assets": "button1.raw,POWER.raw,DONE.raw,WARNING.raw,PAUSE.raw,infinity.raw,cooling.raw",
+      "instructions": {
+        "restart": 1
+      }
+    },
+
+    "dev": {
+      "version": "1.0.63",
+      "host": "fc75firmwaredev.s3.ca-central-1.amazonaws.com",
+      "assethost": "https://fc75assetsdev.s3.ca-central-1.amazonaws.com/",
+      "path": "/ESP32-DEV-1.0.63.bin",
+
+      "firmware": {
+        "url": "https://fc75firmwaredev.s3.ca-central-1.amazonaws.com/ESP32-DEV-1.0.63.bin.enc",
+        "size": 1234567,
+        "sha256": "FIRMWARE_SHA256_HEX",
+
+        "enc": {
+          "alg": "AES-256-GCM",
+          "nonce_b64": "BASE64_NONCE",
+          "tag_b64": "BASE64_TAG"
+        },
+
+        "dek": {
+          "key_id": "esp32_key_v1",
+          "wrap_alg": "ECIES-P256+A256GCM",
+          "wrapped_dek_b64": "BASE64_WRAPPED_DEK",
+          "ephemeral_pub_b64": "BASE64_EPHEMERAL_PUB",
+          "wrap_nonce_b64": "BASE64_WRAP_NONCE"
+        }
+      },
+
+      "assets": "button1.raw,POWER.raw,DONE.raw,WARNING.raw,PAUSE.raw,infinity.raw,cooling.raw",
+      "instructions": {
+        "restart": 1
+      }
+    },
+
+    "stm32": {
+      "version": "07.01.44",
+      "host": "fc75firmware.s3.ca-central-1.amazonaws.com",
+      "path": "STM32-PROD-2.16.1.8.bin",
+
+      "firmware": {
+        "url": "https://fc75firmware.s3.ca-central-1.amazonaws.com/STM32-PROD-2.16.1.8.bin.enc",
+        "size": 654321,
+        "sha256": "STM32_SHA256",
+
+        "enc": {
+          "alg": "AES-256-GCM",
+          "nonce_b64": "BASE64_NONCE",
+          "tag_b64": "BASE64_TAG"
+        },
+
+        "dek": {
+          "key_id": "stm32_key_v1",
+          "wrap_alg": "ECIES-P256+A256GCM",
+          "wrapped_dek_b64": "BASE64_WRAPPED_DEK",
+          "ephemeral_pub_b64": "BASE64_EPHEMERAL_PUB",
+          "wrap_nonce_b64": "BASE64_WRAP_NONCE"
+        }
+      },
+
+      "localfwversion": "2.16.1.8",
+      "instructions": {
+        "restart": 1
+      }
+    }
+  },
+
+  "languages": {
+    "EN_Lang": {
+      "version": "2.0.0",
+      "url": "https://fc75assets.s3.ca-central-1.amazonaws.com/EN_Lang.json",
+      "name": "English"
+    },
+    "FR_Lang": {
+      "version": "1.0.9",
+      "url": "https://fc75assets.s3.ca-central-1.amazonaws.com/FR_Lang.json",
+      "name": "French"
+    }
+  },
+
+  "security": {
+    "sign_alg": "RSASSA_PSS_SHA_256",
+    "signature_b64": "BASE64_SIGNATURE"
+  }
+}
